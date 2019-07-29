@@ -14,26 +14,26 @@ export default class renderUI {
     }
 
     showDate() {
-        setInterval(() => {
-            const date = new Date();
-            const month = date.getMonth();
-            const year = date.getFullYear();
-            const months = [
-                'January',
-                'February',
-                'March',
-                'April',
-                'May',
-                'June',
-                'July',
-                'August',
-                'September',
-                'October',
-                'November',
-                'December'
-              ];
-            this.currentDate.innerHTML = `${months[month]} ${year}`;
-        }, 1000);
+        const date = new Date();
+        const month = date.getMonth();
+        const year = date.getFullYear();
+
+        const months = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+         ];
+
+        this.currentDate.innerHTML = `${months[month]} ${year}`;
     }
 
     submitExpense() {
