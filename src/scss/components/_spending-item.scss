@@ -1,0 +1,17 @@
+.spending-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40rem;
+    margin-bottom: 1rem; 
+    border-bottom: 1px solid #f67e7d;
+
+    &__description {
+        width: 30rem;
+        text-align: start;
+    }
+
+    &__delete {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+  <title>Budgeting</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="header-container__logo">
+        <img src="./assets/img/logo.png" alt="Logo" class="header-container__logo-img">
+      </div>
+      <div class="header-container__text">
+        Control your expenses
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main-container">
+      <div class="main-container__current-budget">
+        <div class="main-container__current-budget--date" id="date">Date</div>
+        <div class="main-container__current-budget--budget" id="budget">0.00</div>
+        <div class="main-container__current-budget--text">Current budget</div>
+      </div>
+      <div class="main-container__income">
+        <form class="main-container__income-form" id="income">
+          <input type="text" class="form-input description" id="income-description" placeholder="Add Income Description">
+          <input type="number" class="form-input value" id="income-value" placeholder="Add Value">
+          <button type="submit" value="" class="button income-button">Add</button>
+        </form>
+      </div>
+      <div class="main-container__expense">
+        <form class="main-container__expense-form" id="expense">
+          <input type="text" class="form-input description" id="expense-description" placeholder="Add Expense Description">
+          <input type="number" class="form-input value" id="expense-value" placeholder="Add Value">
+          <button type="submit" value="" class="button expense-button">Add</button>
+        </form>
+      </div>
+      <div class="main-container__budget-list" id="wastes"></div>
+    </div>
+  </main>
+
+<script src="assets/bundle.js"></script>
+</body>
+</html>
