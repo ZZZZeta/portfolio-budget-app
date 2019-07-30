@@ -13,5 +13,10 @@
 
     &__delete {
         cursor: pointer;
+        transition: all .3s;
+        
+        &:hover {
+            transform: rotate(90deg);
+        }
     }
 }
